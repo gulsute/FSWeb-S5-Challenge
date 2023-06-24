@@ -32,7 +32,7 @@ const tabEkleyici = (secici) => {
   const tabContainer = document.querySelector(secici);
 
   axios
-    .get("http://locallhost:5001/api/konular")
+    .get("http://localhost:5001/api/konular")
     .then(function (response) {
       const tabbox = Tablar(response.data.konular);
       tabContainer.appendChild(tabbox);
